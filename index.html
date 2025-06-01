@@ -2,10 +2,11 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>oscar's personal website</title>
+        <title>amex19.com</title>
         <style>
             body{font-family: Arial, Helvetica, sans-serif;
-            background-color; #f4f4f4;
+            background-color; #4CAF50;
+            color: #333;
             text-align: center;
             padding-top: 50px;
              }
@@ -35,39 +36,10 @@
     <button
     onclick="window.location.href='https://www.youtube.com';">
     visit my youtube</button>
-    <button onclick="showmusicplayer()">listen to my music</button>
-    <div id="musicsection"></div>
-    <script>
-        function showmusicplayer() {
-            const musicSection = document.getElementById("musicsection");
-            musicSection.innerHTML = `
-                <iframe width="300" height="180"
-                src="https://www.youtube.com/playlist?list=PL3czV2v1V2v1DyMnE_hE3HV0v0ca1gZ-Ljdny"
-                tittle="youtube playlist"
-                frameborder="0"
-                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-                </iframe>`;
-        }
-    </script>
-    <!--option dropdown-->
-    <h2>select an option</h2>
-    <select id ="optionselector">
-        <option value="about">about me</option>
-        <option value="projects">projects</option>
-        <option value="contact">contact</option>
-    </select>
-    <script>
-        document.getElementById("optionselector").addEventListener("change", function() {
-            const select = this.value;
-            alert("You selected: " + select);
-        });
-    </script>
-    </body>
     <!--Audio Player-->
     <h3>listen to my favourite songs</h3>
     <audio controls>
-        <source src="Marioo feat Bien https://github.com/oscar-3-blip/my-first-repo/commit/0ef351b5a9e056e9fdb0daa4c17413e5636784aa#diff-aadea16afe148c5da44ec5ccace039904248fb6dfe402d32279f7ab7155850c9- Nairobi (Visualiser).mp3" type="audio/mpg">
+        <source src="Marioo feat Bien - Nairobi (Visualiser).mp3" type="audio/mpg">
         your browser doesn't support the audio element.
         </audio>
 </html>
