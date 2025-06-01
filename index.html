@@ -35,6 +35,20 @@
     <button
     onclick="window.location.href='https://www.youtube.com';">
     visit my youtube</button>
+    <button onclick="showmusicplayer()">listen to my music</button>
+    <div id="musicsection"></div>
+    <script>
+        function showmusicplayer() {
+            const musicSection = document.getElementById("musicsection");
+            musicSection.innerHTML = `
+                <iframe width="300" height="180"
+                src="https://www.youtube.com/embed/0ef351b5a9e056e9fdb0daa4c17413e5636784aa?autoplay=1&mute=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen>
+                </iframe>`;
+        }
+    </script>
     <!--option dropdown-->
     <h2>select an option</h2>
     <select id ="optionselector">
