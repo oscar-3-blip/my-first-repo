@@ -44,13 +44,11 @@
     </select>
     <script>
         document.getElementById("optionselector").addEventListener("change", function() {
-            var selectedValue = this.value;
-            if (selectedValue === "about") {
-                alert("I am a software developer with a passion for creating innovative solutions.");
-            } else if (selectedValue === "projects") {
-                alert("Check out my projects on GitHub!");
-            } else if (selectedValue === "contact") {
-                alert("You can contact me at 0112840222);
+            const select = this.value;
+            alert("You selected: " + select);
+        });
+    </script>
+    </body>
     <!--Audio Player-->
     <h3>listen to my favourite songs</h3>
     <audio controls>
